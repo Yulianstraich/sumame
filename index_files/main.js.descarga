@@ -1,0 +1,148 @@
+$(document).ready(function () {
+
+
+  // Get the messages div.
+  var form = $("#contact-form.con-js");
+  var formMessages = $('.form-messege');
+
+  // Set up an event listener for the contact form.
+  $(form).submit(function(e) {
+    // Stop the browser from submitting the form.
+    e.preventDefault();
+
+    // Serialize the form data.
+    var formData = $(form).serialize();
+
+    // Submit the form using AJAX.
+    $.ajax({
+      type: 'POST',
+      url: $(form).attr('action'),
+      data: formData
+    })
+    .done(function(response) {
+      // Make sure that the formMessages div has the 'success' class.
+      $(formMessages).removeClass('error');
+      $(formMessages).addClass('success');
+
+      var texto = $(formMessages).text(response);
+
+      // Set the message text.
+      setTimeout(function(){ texto.hide("slow"); }, 3000);
+
+      
+      // Clear the form.
+      $('#contact-form input,#contact-form textarea, #contact-form select').val('');
+      $('#contact-form input,#contact-form textarea, #contact-form select, #contact-form button, .contact-three-area .section-title, .contact-form-area .section-title-two, .fill-file').addClass("display-none");
+    })
+    .fail(function(data) {
+      // Make sure that the formMessages div has the 'error' class.
+      $(formMessages).removeClass('success');
+      $(formMessages).addClass('error');
+
+      // Set the message text.
+      if (data.responseText !== '') {
+        $(formMessages).text(data.responseText);
+      } else {
+        setTimeout(function(){ $(formMessages).text('Ups. Hubo un error al enviar tu mensaje, por favor intentalo de nuevo.'); }, 3000);
+      }
+    });
+  });
+
+
+    // // Get the messages div.
+
+    // var form = $("#contact-form.con-js");
+
+    // var formMessages = $('.form-messege');
+
+
+
+    // // Set up an event listener for the contact form.
+
+    // $(form).submit(function(e) {
+
+    //   // Stop the browser from submitting the form.
+
+    //   e.preventDefault();
+
+
+
+    //   // Serialize the form data.
+
+    //   var formData = $(form).serialize();
+
+
+
+    //   // Submit the form using AJAX.
+
+    //   $.ajax({
+
+    //     type: 'POST',
+
+    //     url: $(form).attr('action'),
+
+    //     data: formData
+
+    //   })
+
+    //   .done(function(response) {
+
+    //     // Make sure that the formMessages div has the 'success' class.
+
+    //     $(formMessages).removeClass('error');
+
+    //     $(formMessages).addClass('success');
+
+
+
+    //     var texto = $(formMessages).text(response);
+
+
+
+    //     // Set the message text.
+
+    //     setTimeout(function(){ texto.hide("slow"); }, 3000);
+
+
+
+        
+
+    //     // Clear the form.
+
+    //     $('#contact-form input,#contact-form textarea, #contact-form select').val('');
+
+    //     $('#contact-form input,#contact-form textarea, #contact-form select, #contact-form button, .contact-three-area .section-title, .contact-form-area .section-title-two, .fill-file').addClass("display-none");
+
+    //   })
+
+    //   .fail(function(data) {
+
+    //     // Make sure that the formMessages div has the 'error' class.
+
+    //     $(formMessages).removeClass('success');
+
+    //     $(formMessages).addClass('error');
+
+
+
+    //     // Set the message text.
+
+    //     if (data.responseText !== '') {
+
+    //       $(formMessages).text(data.responseText);
+
+    //     } else {
+
+    //       setTimeout(function(){ $(formMessages).text('Ups. Hubo un error al enviar tu mensaje, por favor intentalo de nuevo.'); }, 3000);
+
+    //     }
+
+    //   });
+
+    // });
+
+
+
+ 
+
+ }); // End of use strict

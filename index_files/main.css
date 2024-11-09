@@ -1,0 +1,3482 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+	font-family: "avenir";
+	src: url("../type/Avenir.ttc");
+  }
+
+
+
+  @font-face {
+	font-family: "avenir-medium";
+	src: url("../type/Avenir-Medium.otf");
+  }
+
+
+
+  @font-face {
+	font-family: "avenir-bold";
+	src: url("../type/Avenir-Bold.otf");
+  }
+
+  
+
+*{
+
+	margin: 0;
+
+	padding: 0;
+
+	box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    margin: 0;
+
+    width: 100%;
+
+    float: left;
+
+}
+
+
+
+a{
+
+
+
+	font-family: "avenir";
+
+}
+
+p{
+
+	font-family: "avenir";
+
+}
+
+h1{
+
+	font-family: "avenir-bold";
+
+}
+
+
+
+h2{
+
+	font-family: "avenir-medium";
+
+}
+
+
+
+h3{
+
+	font-family: "avenir-medium";
+
+}
+
+
+
+
+
+ul{
+
+	font-family: "avenir";
+
+}
+
+li{
+
+	font-family: "avenir";
+
+}
+
+
+
+body {
+
+	margin: 0;
+
+  }
+
+
+
+header{
+
+	position: relative;
+
+	background-color: #ffffff;
+
+  }
+
+
+
+  .logonav{
+
+	width: 17%;
+
+    position: absolute;
+
+    left: 0;
+
+    margin-left: 5%;
+
+    margin-top: 2%;
+
+}
+
+.icon-bar {
+
+	
+
+    position: fixed;
+
+    bottom: 3%;
+
+    right: 2%;
+
+    -webkit-transform: translateY(-50%);
+
+    -ms-transform: translateY(-50%);
+
+    transform: translateY(-50%);
+
+    z-index: +3;
+
+}
+
+.icon-bar a {
+
+    width: 53%;
+
+	color: white;
+
+	text-align: center;
+
+    background-color: #0083c1;
+
+    font-size: 3rem!important;
+
+    border: solid 1px;
+
+    border-color: #00175a;
+
+    border-radius: 146rem;
+
+    padding: 2rem 2.5rem 2rem 2.5rem ;
+
+    transition: .1s;
+
+}
+
+.icon-bar button{
+
+	
+
+}
+
+.icon-bar a:hover{
+
+	cursor: pointer;
+
+	color: #00175a;
+
+	border-color: #00175a;
+
+	background-color: transparent;
+
+	transition: 1s;
+
+}
+
+  
+
+.topnav {
+
+	width: 50%;
+
+    background-color: transparent;
+
+    margin-left: 25%;
+
+    margin-right: 0;
+
+    margin-bottom: 5%;
+
+    overflow: hidden;
+
+    float: right;
+
+  }
+
+  
+
+  .topnav a {
+
+	width: 25%;
+
+    float: left;
+
+    display: block;
+
+    color: black;
+
+    text-align: center;
+
+    margin-top: 5%;
+
+    font-size: 20px;
+
+    padding: 14px 5px;
+
+    text-decoration: none;
+
+    transition: all 1s ease 0s;
+    font-weight: bold;
+
+  }
+
+  
+
+  .topnav .icon {
+
+	display: none;
+
+  }
+
+  
+
+  .dropdown {
+
+	float: left;
+
+	overflow: hidden;
+
+	width: 20%;
+
+    display: block;
+
+    color: black;
+
+    text-align: center;
+
+    margin-top: 5%;
+
+    transition: all 1s ease 0s;
+
+  }
+
+  
+
+  .dropdown .dropbtn {
+
+	width: 100%;
+
+    color: black;
+
+    text-align: center;
+
+    transition: all 1s ease 0s;
+
+	background-color: transparent;
+
+	border: none;
+
+	font-family: "avenir";
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    padding: 14px 5px;
+    font-weight: bold;
+
+  }
+
+  
+
+  .dropdown-content {
+
+	display: none;
+
+	position: absolute;
+
+	background-color: #f9f9f9;
+
+	width: 10%;
+
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+	z-index: 1;
+
+  }
+
+  
+
+  .dropdown-content a {
+
+	width: auto;
+
+	float: none;
+
+	color: black;
+
+	padding: 12px 16px;
+
+	text-decoration: none;
+
+	display: block;
+
+	text-align: left;
+	font-size: 14px;
+
+  }
+
+  
+
+  .topnav a:hover, 
+  .dropdown:hover .dropbtn {
+
+	background-color: #0b9eda;
+
+	color: white;
+
+  }
+
+  
+
+  .dropdown-content a:hover {
+
+	background-color: #0083c1;
+
+	color: white;
+
+  }
+
+  
+
+  .dropdown:hover .dropdown-content {
+
+	display: block;
+
+  }
+
+  
+
+  @media (max-width: 767px){
+
+  	.renglon {
+
+  	    display: block!important;
+
+  	 }
+
+
+
+  	 .cuarto,
+
+  	 .trescuartos{
+
+  	 	width: 	100%!important;
+
+  	 }
+
+
+
+
+
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+
+	.topnav a, .dropdown .dropbtn {
+
+	  display: none;
+
+	}
+
+	.topnav a.icon {
+
+	  float: right;
+
+	  display: block;
+
+	}
+
+  }
+
+  
+
+  @media screen and (max-width: 600px) {
+
+	.topnav.responsive {position: relative; width: 100%;}
+
+	.topnav.responsive .icon {
+
+	  position: absolute;
+
+	  right: 0;
+
+	  top: 0;
+
+	}
+
+	.topnav.responsive a {
+
+	  float: none;
+
+	  display: block;
+
+	  text-align: left;
+
+	  width: auto;
+
+	  text-align: center;
+
+	  align-content: center;
+
+	}
+
+	.topnav.responsive .dropdown {float: none; width: 100%;}
+
+	.topnav.responsive .dropdown-content {position: relative; width: 100%;}
+
+	.topnav.responsive .dropdown .dropbtn {
+
+	  display: block;
+
+	  width: 100%;
+
+	  text-align: center;
+
+	}
+
+  }
+
+  .topnav a:hover {
+
+	color: white;
+
+	transition: all 1s;
+
+    transition: all 1s;
+
+
+
+  }
+
+ /* .topnav a:hover:after {
+
+    content: "";
+
+	color: #28b6ea;
+
+    position: relative;
+
+    float: left;
+
+    width: 15px;
+
+    height: 15px;
+
+	transition: all 1s;
+
+    transition: all 1s;
+
+    
+
+}
+
+  .topnav a:hover:before {
+    content: "+";
+	color: #fff;
+    position: relative;
+    float: left;
+    width: 15px;
+    height: 15px;
+	transition: all 1s;
+    transition: all 1s; 
+}*/
+
+
+
+  .topvan a:active{
+
+	  font-weight: bold;
+
+  }
+
+  
+
+  .topnav .icon {
+
+	display: none;
+
+  }
+
+  
+
+
+
+  .sliderb{
+
+	  width: 100%;
+
+	  height: auto;
+
+
+
+  }
+
+  
+
+  .main2 {
+
+	max-width: 110rem;
+
+	margin: 0 auto;
+
+	padding: 0 2rem;
+
+	overflow: hidden;
+
+	width: 100%;
+
+}
+
+
+
+/* Slider Style
+
+--------------------------------------*/
+
+.cd-slider {
+
+	position: relative;
+
+	width: 100%;
+
+	height: 40rem;
+
+	overflow: hidden;
+
+	
+
+}
+
+.cd-slider li {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 100%;
+
+	visibility: hidden;
+
+	transition: visibility 0s 1s;
+
+  will-change: visibility;
+
+}
+
+.image {
+
+	position: absolute;
+
+	bottom: 0;
+
+	right: 0;
+
+	width: 70%;
+
+	height: 100%;
+
+	background-size: contain;
+
+    background-repeat: no-repeat;
+
+	background-position: bottom;
+
+	clip: rect(0, 80rem, 50rem, 80rem);
+
+	transition: clip .5s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
+
+  will-change: clip;
+
+}
+
+.content {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 100%;
+
+	padding: 3rem 0 0 4rem;
+
+	font-size: 9rem;
+
+	text-align: left;
+
+}
+
+.content h2 {
+
+	text-overflow: ellipsis;
+
+	overflow: hidden;
+
+	transform: translateY(-30%);
+
+	opacity: 0;
+
+	transition: transform .5s, opacity .5s;
+
+  	will-change: transform, opacity;
+
+	font-size: 3rem;
+
+}
+
+.content a {
+
+	color: #fff;
+
+    background-color: #0b9eda;
+
+    text-decoration: none;
+
+    border-radius: 3rem;
+
+    display: inline-block;
+
+    font-size: 1.5rem;
+
+    padding: 1.5rem;
+
+    opacity: 0;
+
+    transform: translateY(-100%);
+
+    transition: transform .5s .1s, opacity .5s .1s;
+
+    will-change: transform, opacity;
+
+	margin-top: 5rem;
+
+}
+
+/* Current Slide 
+
+-------------------------------------*/
+
+li.current {
+
+	visibility: visible;
+
+	transition-delay: 0s;
+
+}
+
+li.current .image {
+
+	clip: rect(0, 80rem, 50rem, 0);
+
+}
+
+li.current .content h2 {
+
+	transform: translateY(0);
+
+	opacity: 1;
+
+	transition-delay: 1s;
+
+}
+
+li.current .content a {
+
+	transform: translateY(0);
+
+	opacity: 1;
+
+	transition-delay: 1.1s;
+
+}
+
+/* Prev Slide 
+
+------------------------------------*/
+
+li.prev_slide .image {
+
+	clip: rect(0, 0, 50rem, 0);
+
+}
+
+nav {
+
+	display: none;
+
+	position: absolute;
+
+	bottom: 0;
+
+	left: 0;
+
+	background: #fff;
+
+	z-index: 2;
+
+}
+
+.prev, .next, .counter {
+
+	vertical-align: middle;
+
+}
+
+.prev, .next {
+
+	position: relative;
+
+	display: inline-block;
+
+	height: 5rem;
+
+	width: 5rem;
+
+  border: 0;
+
+  cursor: pointer;
+
+  background: transparent;
+
+}
+
+.prev::before, .next::before {
+
+	content: '';
+
+	position: absolute;
+
+	top: 50%;
+
+  left: 0;
+
+	transform: translateY(-50%);
+
+	border: .8rem solid transparent;
+
+	border-right-width: 1rem;
+
+	border-right-color: #000;
+
+	border-left-width: 0;
+
+	width: 0;
+
+	height: 0;
+
+}
+
+.prev::after, .next::after {
+
+	content: '';
+
+	position: absolute;
+
+	top: 50%;
+
+	transform: translateY(-50%) translateZ(0);
+
+	left: .5rem;
+
+	background: #000;
+
+	height: .1rem;
+
+	min-height: 1px;
+
+	width: 2.5rem;
+
+	transition: width .3s;
+
+}
+
+.next::before {
+
+	right: 0;
+
+  left: auto;
+
+	border-left-width: 1rem;
+
+	border-left-color: #000;
+
+	border-right-width: 0;
+
+}
+
+.next::after {
+
+	right: .5rem;
+
+	left: auto;
+
+}
+
+.counter {
+
+	display: inline-block;
+
+	font-size: 4rem;
+
+	font-family: serif;
+
+	font-style: italic;
+
+}
+
+.counter span:last-child::before {
+
+	content: '/';
+
+	margin: 0 1rem;
+
+}
+
+.prev:hover::after, .next:hover::after {
+
+	width: 3.5rem;
+
+}
+
+@media screen and ( max-width: 550px ) {
+
+	.image { width: 100%; }
+
+	.content { padding-right: 2rem; }
+
+	nav { left: 0; right: auto; }
+
+}
+
+
+
+  
+
+  main {
+
+	position: relative;
+
+	width: 100%;
+
+	overflow: hidden;
+
+	
+
+}
+
+
+
+
+
+
+
+/*Pagina de Inicio*/
+
+
+
+.conocenos{
+
+	width: 100%;
+
+	position: relative;
+
+	background-image: url(../img/DEGRADADO.png);
+
+	background-color: #f4f4f4;
+
+	background-position: left;
+
+    background-repeat: no-repeat;
+
+    background-size: auto;
+
+    overflow: hidden;
+
+
+
+}
+
+
+
+.conocenos ul li{
+
+	display: flex;
+
+	align-items: center;
+
+	margin-bottom: 20px;
+
+}
+
+
+
+.conocenos ul li img{
+
+	width: 10%;
+
+	margin-right: 20px;
+
+}
+
+
+
+.sleep {
+
+	width: 30%;
+
+    display: block;
+
+    float: left;
+
+	margin-left: 10%;
+
+	margin-right: 10%;
+
+	margin-top: 10%;
+
+	margin-bottom: 10%;
+
+	
+
+}
+
+.sleep img{
+
+	width: 100%;
+
+}
+
+.ctexto{
+
+	width: 40%;
+
+	display: block;
+
+	margin-right: 10%;
+
+	margin-top: 5%;
+
+	margin-bottom: 10%;
+
+	float: left;
+
+}
+
+.ctexto h2{
+
+	color: #0083c1;
+
+}
+
+.ctexto ul{
+
+
+
+	padding-top: 2rem;
+
+    padding-bottom: 2rem;
+
+    font-size: 1.5rem;
+
+	list-style: none;
+
+}
+
+.ctexto a{
+
+	padding-top: 2rem;
+
+    padding-bottom: 2rem;
+
+    padding-right: 13rem;
+
+    text-align: justify;
+
+    font-size: 1.2rem;
+
+	list-style: none;
+
+	text-decoration: none;
+
+}
+
+.conocenos a:hover{
+
+	text-decoration: underline;
+
+	color: #0083c1;
+
+}
+
+
+
+.pdestacados{
+
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 3%;
+	background-color: #0083c1;
+	padding-bottom: 10rem;
+
+}
+
+
+
+.pdestacados button{
+
+	color: white;
+
+    background-color: transparent;
+
+    font-size: 2rem;
+
+    border: solid 1px;
+
+    border-color: #00175a;
+
+    border-radius: 146rem;
+
+    padding: 4rem;
+
+	transition: .1s;
+
+	
+
+}
+
+.pdestacados button:hover{
+
+	cursor: pointer;
+
+	border-color: white;
+
+	transition: 1s;
+
+}
+
+.dtexto{
+	width: 60%;
+    padding-top: 6%;
+    color: white;
+    font-size: 1.5rem;
+    float: left;
+    margin: 0 20%;
+    display: block;
+    text-align: center;
+
+}
+
+.dtexto h1{
+
+	color: #00175a;
+
+	text-decoration: none;
+
+	font-family: "avenir-bold";
+
+	font-size: 4rem;
+
+	line-height: 55px;
+
+}
+
+.botond{
+
+	display: block;
+
+	float: left;
+
+	width: 20%;
+
+	margin-left: 20%;
+
+	margin-right:5%;
+
+	padding-top: 5%
+
+	
+
+}
+
+.fproductos {
+
+	width: 100%;
+
+	text-align: center;
+
+	
+
+}
+
+
+
+.fproductos ul{
+
+	width: 100%;
+
+	display: inline-flex;
+
+	flex-direction: row;
+
+	color: white;
+
+	font-size: 1.5rem;
+
+	font-family: "avenir-medium";
+
+	list-style: none;
+
+	margin-top: 5%;
+
+}
+
+.fproductos a{
+
+	margin: auto;
+
+	transition: all 1s;
+
+	text-decoration: none;
+
+	color: white;
+	font-size: 20px;
+}
+
+.fproductos li{
+
+	margin: auto;
+
+	transition: all 1s;
+
+}
+
+.fproductos li:hover{
+
+		cursor: pointer;
+
+		text-decoration: underline;
+
+		text-decoration-color: #00175a;
+
+		color: #fff;
+
+		transition: all 1s;
+
+	
+
+}
+
+.imagend1{
+
+	width: 50%;
+
+    margin-top: 5%;
+
+    margin-right: 5%;
+
+    display: block;
+
+    float: left;
+
+}
+
+
+
+.imagend1 img{
+
+	width: 100%;
+
+}
+
+
+
+.textdestacados{
+
+	padding-top: 5%;
+
+	
+
+}
+
+
+
+.textdestacados h2{
+
+	color: #0083c1;
+
+}
+
+
+
+.textdestacados p{
+
+	padding-top: 2rem;
+
+    padding-bottom: 2rem;
+
+    text-align: justify;
+
+    font-size: 1.5rem;
+
+}
+
+
+
+.imagend23{
+
+	width: 100%;
+
+    position: relative;
+
+    margin-top: 21%;
+
+}
+
+
+
+.imagend23 img{
+
+	display: block;
+
+    float: left;
+
+    width: 21%;
+
+    
+
+}
+
+/* slider clientes
+
+--------------------*/
+
+
+
+.sliderlogos{
+
+	width: 100%;
+
+	position: relative;
+
+	margin-top: 5%;
+
+	margin-bottom: 5%;
+
+	
+
+}
+
+.container{
+
+	width: 80%!important;
+
+	margin: auto;
+
+}
+
+
+
+.slick-slide {
+
+    margin: 0px 20px;
+
+}
+
+
+
+.slick-slide img {
+
+    width: 100%;
+
+}
+
+
+
+.slick-slider
+
+{
+
+    position: relative;
+
+    display: block;
+
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+
+    -moz-user-select: none;
+
+    -ms-user-select: none;
+
+            user-select: none;
+
+    -webkit-touch-callout: none;
+
+    -khtml-user-select: none;
+
+    -ms-touch-action: pan-y;
+
+        touch-action: pan-y;
+
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+
+
+.slick-list
+
+{
+
+    position: relative;
+
+    display: block;
+
+    overflow: hidden;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+.slick-list:focus
+
+{
+
+    outline: none;
+
+}
+
+.slick-list.dragging
+
+{
+
+    cursor: pointer;
+
+    cursor: hand;
+
+}
+
+
+
+.slick-slider .slick-track,
+
+.slick-slider .slick-list
+
+{
+
+    -webkit-transform: translate3d(0, 0, 0);
+
+       -moz-transform: translate3d(0, 0, 0);
+
+        -ms-transform: translate3d(0, 0, 0);
+
+         -o-transform: translate3d(0, 0, 0);
+
+            transform: translate3d(0, 0, 0);
+
+}
+
+
+
+.slick-track
+
+{
+
+    position: relative;
+
+    top: 0;
+
+    left: 0;
+
+    display: block;
+
+}
+
+.slick-track:before,
+
+.slick-track:after
+
+{
+
+    display: table;
+
+    content: '';
+
+}
+
+.slick-track:after
+
+{
+
+    clear: both;
+
+}
+
+.slick-loading .slick-track
+
+{
+
+    visibility: hidden;
+
+}
+
+
+
+.slick-slide
+
+{
+
+    display: none;
+
+    float: left;
+
+    height: auto;
+
+    min-height: 1px;
+
+}
+
+[dir='rtl'] .slick-slide
+
+{
+
+    float: right;
+
+}
+
+.slick-slide img
+
+{
+
+    display: block;
+
+}
+
+.slick-slide.slick-loading img
+
+{
+
+    display: none;
+
+}
+
+.slick-slide.dragging img
+
+{
+
+    pointer-events: none;
+
+}
+
+.slick-initialized .slick-slide
+
+{
+
+    display: block;
+
+}
+
+.slick-loading .slick-slide
+
+{
+
+    visibility: hidden;
+
+}
+
+.slick-vertical .slick-slide
+
+{
+
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+
+}
+
+.slick-arrow.slick-hidden {
+
+    display: none;
+
+}
+
+
+
+/* Profesionales de la Salud
+
+------------------------------------------------------------------------------*/
+
+.titulopds{
+
+	color: #0b9eda;
+
+	margin: auto;
+
+	text-align: center;
+
+	margin-bottom: 5%;
+
+    font-size: 3rem;
+
+}
+
+.secitionpds{
+
+	width: 100%;
+
+    height: auto;
+
+    position: relative;
+
+    background-color: #f0f0f0;
+
+    margin-bottom: 10%;
+
+	overflow: hidden;
+
+    background-image: url(../img/DEGRADADO.png);
+
+    background-color: #f4f4f4;
+
+    background-position: left,bottom;
+
+    background-repeat: no-repeat;
+
+    background-size: auto;
+
+    overflow: hidden;
+
+}
+
+.flex-container {
+
+	display: flex;
+
+    flex-direction: row;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    margin: 10%;
+
+
+
+	
+
+  }
+
+  
+
+  .flex-item {
+
+	background-color: transparent;
+
+	padding: 2rem;
+
+	flex: 50%;
+
+  }
+
+  .flex-item h2{ 
+
+	font-family: 'avenir';
+
+    font-size: 2rem;
+
+    padding: 1.5rem;
+
+    color: #64a4ce;
+
+}
+
+.flex-item a{
+
+	font-size: 1.2rem;
+
+}
+
+  
+
+
+
+.hospitales{
+
+	width: 100%;
+
+	margin: 4rem 0;
+
+}
+
+
+
+.hospitales h2{
+
+	color: #0083c1;
+
+	text-align: center;
+
+	margin: 2rem 0 3rem;
+
+}
+
+  
+
+  
+
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+
+  @media (max-width: 800px) {
+
+	.flex-container {
+
+	  flex-direction: column;
+
+	}
+
+  }
+
+
+
+/* Footer-------------------*/
+
+
+
+
+
+  .footer {
+
+	position: relative;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 80%;
+
+	margin-left: 10%;
+
+	margin-right: 10%;
+
+	margin-bottom: 5%;
+
+	margin-top: 5%;
+
+	float: left;
+
+	
+
+
+
+  }
+
+  
+
+  /* Create three equal columns that floats next to each other */
+
+  .column {
+
+	float: left;
+
+	width: 33.33%;
+
+	padding: 10px;
+
+	height: auto;
+
+	line-height: 1.4rem;
+
+  }
+
+  .column2 {
+
+	float: left;
+
+	width: 33.33%;
+
+	padding: 10px;
+
+	height: auto;
+
+	line-height: 1.4rem;
+
+  }
+
+  .column2 p,
+
+  .column2 a{
+
+	  font-size: x-small;
+
+	  color: #000;
+
+	  text-transform: uppercase;
+
+	  text-decoration: none;
+
+	  margin-bottom: .5rem;
+
+	  display: block;
+
+  }
+
+  .column h1{
+
+	  font-size: 2rem;
+
+	  line-height: 2.4rem;
+
+	  
+
+
+
+  }
+
+
+
+  .column h2{
+
+	  font-size: small;
+
+  }
+
+  .column p{
+
+	  font-size: smaller;
+
+  }
+
+  
+
+  /* Clear floats after the columns */
+
+  .row:after {
+
+	content: "";
+
+	display: table;
+
+	clear: both;
+
+  }
+
+  
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+  @media screen and (max-width: 600px) {
+
+	.column {
+
+	  width: 100%;
+
+	}
+
+  }
+
+
+
+  /* Productos
+
+------------------------------------------------------------------------------*/
+
+div.gallery {
+
+	border: none;
+
+  }
+
+   
+
+  div.gallery img {
+
+	width: 100%;
+
+	height: auto;
+
+  }
+
+  
+
+  div.desc {
+
+	font-family: "avenir-bold";
+
+	font-size: 1.5rem;
+
+	padding: 15px 0;
+	color: #000;
+
+  }
+
+
+
+  a.cats{
+
+  	width: 100%;
+
+  	float: left;
+
+  	font-family: "avenir-bold";
+
+  	font-size: 1rem;
+
+  	padding: 15px;
+
+  	text-align: center;
+
+  	text-decoration: none;
+
+  	color: #000;
+
+  	padding: 10px;
+
+  	border: 1px solid;
+
+  	display: none;
+
+  }
+
+  
+
+  .formulario-footer{
+
+  	width: 100%;
+
+  	float: left;
+
+  	padding: 2rem 0;
+
+  	text-align: center;
+
+  }
+
+
+
+  .formulario-footer h1{
+
+  	font-family: "avenir-bold";
+
+  	color: #0b9eda;
+
+  }
+
+
+
+  .formulario-contacto{
+
+  	width: 80%;
+
+  	margin: 0 auto 5rem;
+
+  	display: block;
+
+
+
+  }
+
+
+
+  .formulario-contacto input {
+
+    width: 100%;
+
+    font-weight: normal;
+
+    font-size: 15px;
+
+    padding: 10px 0;
+
+    margin: 5px 0 10px 5px;
+
+    color: #000!important;
+
+    border: none;
+
+    border-bottom-width: 1px;
+
+    border-bottom-style: solid;
+
+    border-bottom-color: #00175a;
+
+    background: transparent;
+
+    outline: none;
+
+    font-family: "avenir";
+
+    color: #0083c1;
+
+}
+
+
+
+  .formulario-contacto input::-webkit-input-placeholder { 
+
+  color: #000;
+
+}
+
+  .formulario-contacto input::-moz-placeholder { 
+
+  color: #000;
+
+}
+
+  .formulario-contacto input:-ms-input-placeholder { 
+
+  color: #000;
+
+}
+
+  .formulario-contacto input:-moz-placeholder { 
+
+  color: #000;
+
+}
+
+
+
+#btn-footer{
+
+	border: 1px solid;
+
+	padding: 10px 0;
+
+	font-family: "avenir";
+
+	color: #0083c1;
+
+	background: transparent;
+
+	width: 15%;
+
+	display: block;
+
+	margin-top: 1rem;
+
+	float: right;
+
+}
+
+
+
+
+
+  * {
+
+	box-sizing: border-box;
+
+  }
+
+  
+
+  .grid{
+
+	width: 80%;
+
+	margin-top: 5%;
+
+	margin-left: 10%;
+
+	margin-right: 10%;
+
+	display: inline-block;
+
+  }
+
+
+
+  .grid h1{
+
+  	margin-bottom: 2rem;
+
+  }
+
+
+
+  .responsive {
+
+  	padding: 0 .5rem;
+
+    float: left;
+
+    width: 24%;
+
+  }
+
+
+
+  .responsiveR{
+
+	padding: 3rem 1rem;
+
+	float: left;
+
+	width: 32.99999%;
+
+  }
+
+  
+
+  @media only screen and (max-width: 700px) {
+
+	.responsive {
+
+	  width: 49.99999%;
+
+	  margin: 6px 0;
+
+	}
+
+  }
+
+  
+
+  @media only screen and (max-width: 500px) {
+
+	.responsive {
+
+	  width: 100%;
+
+	}
+
+  }
+
+  
+
+  .clearfix:after {
+
+	content: "";
+
+	display: table;
+
+	clear: both;
+
+  }
+
+
+
+/* Quienes Somos
+
+------------------------------------------------------------------------------*/
+
+
+
+.qsbody{
+
+	width: 100%;
+
+	position: relative;
+
+	overflow: hidden;
+
+}
+
+.qs{
+
+	width: 100%;
+
+	overflow: hidden;
+
+}
+
+
+
+.imgq{
+
+	width: 30%;
+
+	margin-top: 10%;
+
+	margin-left: 10%;
+
+	display: block;
+
+	float: left;
+
+}
+
+
+
+.qstexto{
+
+	width: 40%;
+
+	margin-top: 15%;
+
+	margin-right: 20%;
+
+	display: block;
+
+	float: left;
+
+}
+
+
+
+.qstexto h3{
+
+	color: #0083c1;
+
+
+
+
+
+}
+
+.qstexto h2{
+
+	font-size: 2rem;
+
+}
+
+.qstexto p{
+
+	font-size: 1rem;
+
+}
+
+.qstexto h1{
+
+	color: #dcdcdc;
+
+	font-size: 3rem;
+
+	margin-top: 10%;
+
+}
+
+
+
+.mv{
+
+	width: 100%;
+
+	margin-top: 3%;
+
+	margin-bottom: 10%;
+
+	margin-right: 20%;
+
+	display: block;
+
+	float: left;
+
+}
+
+
+
+.imgmv{
+
+	width: 30%;
+
+	margin-right: 10%;
+
+	margin-left: 10%;
+
+	display: block;
+
+	float: left;
+
+}
+
+.mvtexto{
+
+	width: 40%;
+
+	margin-top: 5%;
+
+	margin-left: 10%;
+
+	display: block;
+
+	float: left;
+
+	text-align: justify;
+
+}
+
+
+
+.mvtexto h3{
+
+	color: #0083c1;
+
+	font-size: 1.6rem;
+
+
+
+
+
+}
+
+.mvtexto h2{
+
+	font-size: 2rem;
+
+}
+
+.mvtexto p{
+
+	font-size: 1rem;
+
+}
+
+
+
+.valores{
+
+	width: 100%;
+
+	background-color: #0b9eda;
+
+	overflow: hidden;
+
+	margin-bottom: 10%;
+
+}
+
+
+
+.valores .tvalores.centrado{
+
+	width: 26%;
+
+	margin: 5% auto 0;
+
+	display: block;
+
+}
+
+
+
+
+
+.valores .tvalores h3 img{
+
+	width: 20%;
+
+	margin-right: 20px;
+
+}
+
+
+
+.tvalores{
+
+	width: 60%;
+
+	margin: auto;
+
+	margin-bottom: 5%;
+
+	margin-top: 5%;
+
+	text-align: center;
+
+
+
+}
+
+.tvalores h2{
+
+	color: white;
+
+	font-size: 1.8rem;
+
+	font-family: "avenir-bold";
+
+}
+
+
+
+.tvalores p{
+
+	color: black;
+
+	font-size: 1rem;
+
+	margin-top: 1rem;
+
+}
+
+
+
+.tvalores h3{
+
+	font-family: "avenir";
+
+	display: flex;
+
+	align-items: center;
+
+	margin-bottom: 1rem;
+
+}
+
+
+
+/* Oficinas
+
+------------------------------------------------------------------------------*/
+
+
+
+.formulario-footer p{
+
+	width: 80%;
+
+	margin: 1rem auto;
+
+	display: block;
+
+}
+
+
+
+.block{
+
+	width: 80%;
+
+	margin-left: 10%;
+
+	margin-right: 10%;
+
+	margin-top: 10%;
+
+	height: auto;
+
+	display: block;
+
+}
+
+
+
+.contacto-page .block{
+
+	display: block;
+
+	float: left;
+
+	margin-top: 5%;
+
+}
+
+
+
+.cuarenta{
+
+	width: 40%;
+
+	float: left;
+
+}
+
+
+
+.ciudad{
+
+	width: 100%;
+
+	height: auto;
+
+	display: block;
+
+}
+
+
+
+.tciudad{
+
+	width: 100%;
+
+	padding-top: 4%;
+
+	padding-bottom: 4%;
+
+	border: solid 1px;
+
+	border-color: #201e1e;
+
+	border-left: none;
+
+	border-right: none;
+
+	font-size: 1rem;
+
+	color: #0b9eda;
+
+	display: block;
+
+	float: left;
+
+}
+
+
+
+.direccion{
+
+	width: 50%;
+
+	margin-top: 5%;
+
+	display: block;
+
+	float: left;
+
+}
+
+
+
+.telefonos{
+
+	width: 50%;
+
+	margin-top: 5%;
+
+	display: block;
+
+	float: left;
+
+}
+
+
+
+.sesenta{
+
+	width: 60%;
+
+	float: left;
+
+}
+
+
+
+.map{
+
+	width: 100%;
+
+	display: block;
+
+	float: left;
+
+}
+
+.map iframe{
+
+	width: 100%;
+
+	height: 20rem;
+
+}
+
+
+
+.block button{
+
+	width: 10%;
+
+	padding: 1rem;
+
+	margin-top: 3%;
+
+	background-color: transparent;
+
+	font-family: "avenir";
+
+	color: #0083c1;
+
+	font-size: 1rem;
+
+	border: solid 1px;
+
+	border-left: none;
+
+	border-right: none;
+
+	border-top: none;
+
+
+
+}
+
+.block button:hover{
+
+	border: solid 3px;
+
+	transition: all .1s;
+
+	
+
+}
+
+
+
+.clientes{
+
+	width: 80%;
+
+	margin-left: 10%;
+
+	margin-right: 10%;
+
+	margin-top: 5%;
+
+	display: block;
+
+}
+
+.clientes h3{
+
+	color: #0083c1;
+
+	font-size: 1.2rem;
+
+	
+
+}
+
+
+
+.clientes ul{
+
+	display: flex;
+
+	list-style: none;
+
+}
+
+.clientes li{
+
+	margin: auto;
+
+}
+
+/* Formulario
+
+------------------------------------------------------------------------------*/
+
+.boxf{
+
+	width: 100%;
+
+	margin-top: 10%;
+
+	padding: 5% 10% 10% 10%;
+
+	background-image: url(../img/fondof.png);
+
+	background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    overflow: hidden;
+
+}
+
+.titulof{
+
+	position: relative;
+
+	display: block;
+
+	float: left;
+
+	width: 30%;
+
+	font-size: 1.5rem!important;
+
+	
+
+}
+
+.formulario{
+
+	float: left;
+
+	display: block;
+
+	width: 50%;
+
+	margin-top: 10%;
+
+	
+
+}
+
+.formulario p{
+
+	color: #201e1e;
+
+	width: 100%;
+
+	
+
+}
+
+
+
+.formulario button{
+
+	color: #FFF;
+
+    font-size: 1rem;
+
+    background-color: #0083c1;
+
+    padding: 40px 30px 40px 30px;
+
+	border-radius: 20rem;
+
+    margin-bottom: 10%;
+
+	margin-top: 5%;
+
+    border: none;
+
+    cursor: pointer;
+
+    opacity: 0.9;
+
+    float: right;
+
+}
+
+.formulario button:hover{
+
+	color: #fff;
+
+	background-color: transparent;
+
+	border: solid #fff 1px;
+
+	transition: all 1s;
+
+}
+
+input{
+
+	width: 100%;
+
+    font-weight: normal;
+
+    font-size: 1.2rem;
+
+    padding: 2rem;
+
+    padding-left: 0;
+
+    padding-bottom: 1.16rem;
+
+    margin: 5px 0 10px 5px;
+
+    color: #00175a !important;
+
+    border: none;
+
+    border-bottom-width: 1px;
+
+    border-bottom-style: solid;
+
+    border-bottom-color: #00175a;
+
+    background: transparent;
+
+    outline: none;
+
+}
+
+input::placeholder{
+
+	color: #fff;
+
+}
+
+
+
+
+
+.renglon{
+
+	display: flex;
+	width: 100%;
+	float: left;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem 0 5rem;
+}
+
+
+
+.cuarto{
+
+	width: 25%;
+
+}
+
+
+
+
+
+.trescuartos{
+
+	width: 75%;
+
+	padding: 2rem;
+
+}
+
+
+
+.cuarto img{
+
+	width: 100%;
+
+}
+
+
+
+.dire{
+
+	text-decoration: none;
+
+	margin: 1rem 0;
+
+	color: #000;
+
+	font-size: smaller;
+
+}
+
+.contenedor-rel{
+	width: 100%;
+	float: left;
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.contenedor-rel img{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.contenedor-rel .texto{
+	float: left;
+	width: 100%;
+	top: 0;
+	padding: 2rem 0;
+}
+
+.contenedor-rel h1{
+	color: #002060;
+	font-weight: bold;
+}
+
+.contenedor-rel p{
+	font-weight: bold;
+}
+
+.bg-gris{
+	background: #f2f2f2;
+	padding: 4rem 1rem;
+	min-height: 346px;
+}
+
+.bg-gris hr{
+	margin-bottom: 1rem;
+}
+
+.responsive{
+	min-height: 397px;
+}
+
+.responsive p{
+	color: #000;
+}
+
+.gallery a{
+	text-decoration: none;
+	color: #000;
+}
+
+@media only screen and (max-width: 1280px) {
+
+	h1,h2,h3,h4 {
+
+	  font-size: x-large !important;
+
+	}
+
+	p,ul,li,button,a{
+
+		font-size: medium !important;
+
+	}
+
+
+
+	.topnav{
+
+		width: 70%;
+
+	}
+
+
+
+	.qstexto{
+
+		margin-right: 10%;
+
+		margin-left: 10%;
+
+	}
+
+	
+
+  }
+
+
+
+@media only screen and (max-width: 600px){
+
+	.topnav a:hover:before{
+
+		content: "";
+
+	}
+
+
+
+	.topnav .responsive{
+
+		width: 100%;
+
+
+
+	}
+
+
+
+	.logonav{
+
+		width: 28%;
+
+	}
+
+
+
+	html{
+
+		overflow-x: hidden;
+
+	}
+
+	.column{
+
+		text-align: center;
+
+
+
+	}
+
+	.column2{
+
+		text-align: center;
+
+		width: auto;
+
+	}
+
+	.column h2{
+
+		font-size: medium!important;
+
+	}
+
+	.sliderb{
+
+		height: auto;
+
+	}
+
+
+
+	.main2{
+
+		padding: none;
+
+	}
+
+
+
+	.content{
+
+		padding-left: 0;
+
+	}
+
+	.content a{
+
+		margin-top: .4rem;
+
+		padding: .5rem;
+
+
+
+	}
+
+	.content h2{
+
+		font-size: 2rem!important;
+
+
+
+	}
+
+	.image{
+
+		top: 8%;
+
+	}
+
+	.sleep{
+
+		display: none;
+
+	}
+
+	.ctexto{
+
+		width: 100%;
+
+		text-align: center;
+
+	}
+
+
+
+	.botond{
+
+		position: absolute;
+
+    	width: 100%;
+
+   		margin: auto;
+
+    	float: none;
+
+    	top: 26%;
+
+	}
+
+	.dtexto{
+
+		width: 80%;
+
+		margin: auto;
+
+		padding-top: 14%;
+
+		float: none;
+
+		text-align: center;
+
+	}
+
+	.pdestacados button{
+
+		align-content: center;
+
+    	margin: 28%;
+
+    	text-align: center;
+
+    	padding: 3rem;
+
+	}
+
+	
+
+	.ctexto a {
+
+		padding: 0;
+
+		text-align: center;
+
+	}
+
+	.container{
+
+		width: 200%!important;
+
+	}
+
+	.imgq{
+
+		width: 100%;
+
+	}
+
+	.imgq img{
+
+		width: 80%;
+
+	}
+
+
+
+	.qstexto{
+
+		width: 80%;
+
+		text-align: justify;
+
+	}
+
+	.mvtexto{
+
+		width: 80%;
+
+		
+
+	}
+
+	.imgmv{
+
+		width: 100%;
+
+	}
+
+	.imgmv img{
+
+		width: 106%;
+
+	}
+
+  
+
+	.ciudad{
+
+		width: 100%;
+
+	}
+
+	.tciudad{
+
+		width: 100%;
+
+		text-align: center;
+
+
+
+	}
+
+	.map{
+
+		width: 100%;
+
+		margin-bottom: 5%;
+
+
+
+	}
+
+	.map iframe{
+
+		width: 100%;
+
+		height: 15rem;
+
+	}
+
+	
+
+	.direccion{
+
+		width: 100%;
+
+		float: none;
+
+		text-align: center;
+
+	}
+
+	.telefonos{
+
+		width: 100%;
+
+		float: none;
+
+		text-align: center;
+
+	}
+
+	.block button{
+
+		width: 100%;
+
+	}
+
+	.clientes h3 {
+
+		text-align: center;
+
+	}
+
+
+
+	.clientes ul{
+
+		display: block;
+
+		text-align: center;
+
+	}
+
+
+
+	.titulof{
+
+		width: auto;
+
+		text-align: center;
+
+	}
+
+	.formulario{
+
+		width: auto;
+
+	}
+
+	.formulario p{
+
+		text-align: justify;
+
+	}
+
+	.icon-bar{
+
+		right: 4%;
+
+		bottom: 2%;
+
+	}
+
+	.icon-bar a{
+
+		width: 50%;
+
+		color: white;
+
+		text-align: center;
+
+		background-color: #0083c1;
+
+		font-size: 2rem!important;
+
+		border: solid 1px;
+
+		border-color: #00175a;
+
+		border-radius: 146rem;
+
+		padding: 1rem 1.5rem 1rem 1.5rem;
+
+		transition: .1s;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+	.dropdown-content{
+
+		width: 20%;
+
+	}
+
+
+
+	.topnav {
+
+	    width: 80%;
+
+	}
+
+
+
+}
+
+
+
+@media (max-width: 767px){
+
+	h1.d-none.d-sm-block{
+		display: none;
+	}
+
+	body{
+
+		overflow-x: hidden;
+
+	}
+
+
+
+	#btn-footer,
+
+	.sesenta,
+
+	.cuarenta{
+
+		width: 100%;
+
+	}
+
+
+
+	.tciudad{
+
+		margin-bottom: 1rem;
+
+	}
+
+
+
+	.telefonos{
+
+		margin: 1rem 0;
+
+	}
+
+
+
+	.content h2 {
+
+	    text-align: center;
+
+	}
+
+
+
+	.content a{
+
+		width: 100%;
+
+		text-align: center;
+
+	}
+
+
+
+	.image {
+
+		width: 100%;
+
+		top: 0!important;
+
+		background-position: bottom;
+
+		background-size: 100%;
+
+	}
+
+
+
+	.cd-slider {
+
+	    height: 25rem;
+
+	}
+
+
+
+	.sliderlogos {
+
+	    float: left;
+
+	    width: 100%;
+
+	    position: relative;
+
+	    margin-top: 15%;
+
+	    margin-bottom: 0;
+
+	}
+
+
+
+	.ctexto ul {
+
+	    text-align: left;
+
+	    margin-left: 2rem;
+
+	}
+
+
+
+	.hospitales h2 {
+
+	    text-align: center;
+
+	    margin: 0rem 0 3rem;
+
+	    float: left;
+
+	    font-size: 20px!important;
+
+	    width: 50%;
+
+	}
+
+
+
+	.fproductos ul {
+
+		max-resolution: 2rem;
+
+	    width: 100%;
+
+	    display: inline;
+
+	}
+
+
+
+	.fproductos li {
+
+	    margin: .5rem auto;
+
+	    transition: all 1s;
+
+	    width: 100%;
+
+	}
+
+
+
+	.valores .tvalores.centrado {
+
+	    width: 90%;
+
+	    margin: 5% auto 0;
+
+	    display: block;
+
+	    text-align: left;
+
+	}
+
+
+
+	.tvalores h2{
+
+		text-align: center;
+
+	}
+
+
+
+	.formulario-contacto {
+
+	    width: 90%;
+
+	    margin: 0 auto;
+
+	    display: block;
+
+	}
+
+	.iframe{
+
+		display: none;
+
+	}
+
+	.no-movil{
+
+		display: none!important;
+
+	}
+
+
+
+	.cats{
+
+		display: block;
+
+	}
+
+
+
+	a.cats{
+
+		display: block!important;
+
+	}
+
+}
+
+
+
